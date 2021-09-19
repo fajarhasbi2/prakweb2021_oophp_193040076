@@ -10,7 +10,9 @@ class Produk {
             $penerbit = "penerbit",
             $harga = 0;
 
-
+public function sayHello(){
+    return "haloo dunia!";
+}
 }
 
 // $produk1 = new Produk();
@@ -30,3 +32,5 @@ $produk3->harga = 400000;
 
 
 echo "Komik : $produk3->penulis, $produk3->penerbit";
+echo "<br>";
+echo $produk3->sayHello();
