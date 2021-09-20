@@ -10,8 +10,8 @@ class Produk {
             $penerbit = "penerbit",
             $harga = 0;
 
-public function sayHello(){
-    return "haloo dunia!";
+public function getLable(){
+    return "$this->penulis,$this->penerbit";
 }
 }
 
@@ -33,4 +33,4 @@ $produk3->harga = 400000;
 
 echo "Komik : $produk3->penulis, $produk3->penerbit";
 echo "<br>";
-echo $produk3->sayHello();
+echo $produk3->getLable();
